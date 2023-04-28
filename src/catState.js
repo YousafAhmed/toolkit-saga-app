@@ -3,11 +3,11 @@ import { createSlice } from "@reduxjs/toolkit";
 export const catSlice = createSlice({
   name: "cat",
   initialState: {
-    cats: [],
+    catsState: [],
     isLoading: false,
   },
 
-  reducer: {
+  reducers: {
     getCatsFetch: (state) => {
       state.isLoading = true;
     },
